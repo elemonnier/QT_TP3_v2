@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.7)
 project(QT_TP3)
-
 set(CMAKE_CXX_STANDARD 14)
-
-add_executable(QT_TP3 main.cpp)
+set(CMAKE_AUTOMOC ON)
+find_package(Qt5Widgets CONFIG REQUIRED)
+add_executable(QT_TP3 main.cpp IHM.h IHM.cpp)
+target_link_libraries(QT_TP3 Qt5::Widgets)

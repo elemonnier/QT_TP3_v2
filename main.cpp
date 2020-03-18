@@ -1,6 +1,9 @@
 #include <iostream>
+#include <QApplication>
 
-int main() {
-    std::cout << "Hello, !" << std::endl;
-    return 0;
+int main(int argc, char** argv) {
+    auto app = new QApplication (argc, argv);
+
+
+    return app->exec();
 }
