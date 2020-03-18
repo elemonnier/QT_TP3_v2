@@ -10,7 +10,7 @@ IHM::IHM(QWidget * parent) : QWidget(parent) {
     auto layout = new QVBoxLayout();
     this->slider = new QSlider(Qt::Horizontal);
     this->progressBar = new QProgressBar;
-    layout->addWidget(this->slider);
     layout->addWidget(this->progressBar);
+    layout->addWidget(this->slider);
     this->setLayout(layout);
 }
