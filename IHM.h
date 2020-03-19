@@ -18,10 +18,9 @@ private:
     QProgressBar* progressBar;
 public:
     IHM(QWidget* = nullptr);
-//signals:
-//    void valueChanged(int);
-//public slots:
-//    void setValue(int);
+signals:
+    void valueChanged(int);
+public slots:
 };
 
 #endif //QT_TP3_IHM_H
