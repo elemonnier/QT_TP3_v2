@@ -21,7 +21,7 @@ public:
 signals:
 public slots:
     void printName();
-    void printIHM();
+//    void printIHM();
 };
 
 #endif //QT_TP3_IHM_2_H
