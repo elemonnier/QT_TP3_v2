@@ -15,13 +15,14 @@ class IHM_2 : public QWidget {
 private:
     QPushButton* button;
     QTextEdit* textEdit;
-    static int count;
+    int count = 0;
 public:
     IHM_2(QString = "fils", QWidget* = nullptr);
 signals:
 public slots:
     void printName();
-//    void printIHM();
+    void printInTextEdit();
+    void printIHM();
 };
 
 #endif //QT_TP3_IHM_2_H
