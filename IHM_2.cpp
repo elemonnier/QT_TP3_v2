@@ -16,7 +16,7 @@ IHM_2::IHM_2(QString text, QWidget* parent) : QWidget(parent) {
     this->button->setText(text);
     this->textEdit = new QTextEdit();
     this->textEdit->setMaximumHeight(100);
-//    this->textEdit->setText("texte initial");
+    this->textEdit->setText("texte initial");
     auto layout = new QVBoxLayout();
     layout->addWidget(this->button);
     layout->addWidget(this->textEdit);
@@ -44,7 +44,6 @@ void IHM_2::printName() {
     cout << "Example" << this->count << "\n";
     QString text = "Example";
     text.append(QString::number(this->count));
-    text.append('\n');
     this->button->setText(text);
 }
 
